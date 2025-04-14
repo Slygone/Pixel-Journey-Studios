@@ -50,11 +50,11 @@
                         <h2>Send a Message</h2>
                         <form id="contactForm" action="#" method="POST">
                             <div class="form-group">
-                                <label for="name">Filip Ivanovski</label>
+                                <label for="name">Your Name</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">filipivanovski42@gmail.com</label>
+                                <label for="email">Your Email</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group">
@@ -225,14 +225,14 @@
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
                     
-                    // Here you would normally send the form data to a server
-                    // For demo purposes, we'll just show the success message
-                    
-                    // Simulating form submission delay
+                    // Hide form and show loading state
                     contactForm.classList.add('loading');
-                    
+                    formSuccess.style.display = 'none';
+
+                    // Simulate server request
                     setTimeout(function() {
                         contactForm.classList.remove('loading');
+                        contactForm.reset(); // Clear form fields
                         contactForm.style.display = 'none';
                         formSuccess.style.display = 'flex';
                     }, 1500);
