@@ -322,6 +322,66 @@ nav ul li a.active::after {
     left: 0;
 }
 
+/* Contact Page Improvements */
+.contact-content {
+  padding: 4rem 0;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Footer */
 footer {
     background-color: var(--dark-color);
