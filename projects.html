@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Game Dev Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Game Developer Portfolio showcasing WebGL projects and games">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Game Dev Portfolio</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Projects Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>A showcase of my game development work with playable WebGL demos</p>
+            </div>
+        </section>
+
+        <!-- Project Filters -->
+        <section class="project-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="unity">Unity</button>
+                    <button class="filter-btn" data-filter="unreal">Unreal Engine</button>
+                    <button class="filter-btn" data-filter="webgl">WebGL</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section class="projects-gallery">
+            <div class="container">
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="unity webgl">
+                        <div class="project-image">
+                            <img src="img/project1.jpg" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Adventure Game</h3>
+                            <p>A 3D adventure game built with Unity, featuring physics-based puzzles and exploration mechanics.</p>
+                            <div class="project-tech">
+                                <span>Unity</span>
+                                <span>C#</span>
+                                <span>WebGL</span>
+                            </div>
+                            <a href="project1.html" class="btn-small">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="unreal">
+                        <div class="project-image">
+                            <img src="img/project2.jpg" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>FPS Prototype</h3>
+                            <p>A first-person shooter prototype developed in Unreal Engine with custom weapons and AI systems.</p>
+                            <div class="project-tech">
+                                <span>Unreal Engine</span>
+                                <span>Blueprints</span>
+                                <span>C++</span>
+                            </div>
+                            <a href="project2.html" class="btn-small">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="webgl">
+                        <div class="project-image">
+                            <img src="img/project3.jpg" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Puzzle Game</h3>
+                            <p>A browser-based puzzle game built with Three.js and WebGL, featuring interactive elements and levels.</p>
+                            <div class="project-tech">
+                                <span>Three.js</span>
+                                <span>JavaScript</span>
+                                <span>WebGL</span>
+                            </div>
+                            <a href="project3.html" class="btn-small">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="unity webgl">
+                        <div class="project-image">
+                            <img src="img/project4.jpg" alt="Project 4">
+                        </div>
+                        <div class="project-info">
+                            <h3>Mobile Game</h3>
+                            <p>A casual mobile game developed in Unity with touch controls and social features.</p>
+                            <div class="project-tech">
+                                <span>Unity</span>
+                                <span>C#</span>
+                                <span>Mobile</span>
+                            </div>
+                            <a href="project4.html" class="btn-small">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured WebGL Demo -->
+        <section class="webgl-demo">
+            <div class="container">
+                <h2>Featured Playable Demo</h2>
+                <p>Try out this WebGL demo embedded directly from itch.io</p>
+                
+                <!-- WebGL Embed Container -->
+                <!-- Replace GAME_ID with your actual itch.io game ID -->
+                <div class="webgl-container">
+                    <!-- Placeholder message - this would be replaced by the actual iframe -->
+                    <div class="placeholder-message">
+                        <p>This is where your itch.io game would be embedded.</p>
+                        <p>To embed your real game, replace this with the iframe code from itch.io.</p>
+                        <p>Example:</p>
+                        <code>
+                            &lt;iframe src="https://itch.io/embed-upload/GAME_ID?dark=true" allowfullscreen="" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-description">
+                    <h3>About This Demo</h3>
+                    <p>This is a playable demo of my latest project. It showcases core gameplay mechanics including...</p>
+                    <p>Controls: WASD to move, Space to jump, Mouse to look around, Left-click to interact.</p>
+                    <p>For the best experience, try playing in fullscreen mode!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Game Dev Portfolio</h3>
+                    <p>Creating interactive experiences and games</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-itch-io"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Game Dev Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    
+    <!-- Project Filtering JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Project filtering functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            if (card.getAttribute('data-category').includes(filterValue)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+# GAME DEVELOPMENT PORTFOLIO WEBSITE - TO-DO LIST
+
+## PLANNING PHASE
+- [x] Define target audience (recruiters, fellow developers, clients)
+- [  ] Gather portfolio materials (screenshots, videos, descriptions)
+- [x] Choose color scheme and typography
+- [x] Sketch basic layout and wireframes
+
+## DEVELOPMENT PHASE
+
+### SITE STRUCTURE
+- [x] Create basic file structure
+- [x] Set up version control (Git repository)
+- [x] Implement responsive layout framework
+- [x] Create navigation menu
+
+### PAGES TO CREATE
+- [x] Home/Landing page
+- [x] Projects gallery
+- [x] About me page
+- [x] Contact page
+
+### HOME PAGE
+- [x] Hero section with introduction
+- [x] Featured projects showcase
+- [x] Skills overview
+- [x] Call to action (CTA)
+
+### PROJECTS GALLERY
+- [x] Project cards with thumbnails
+- [x] Filter/sort functionality
+- [x] WebGL embedding for interactive demos
+- [x] Project details modal/page
+
+### ABOUT ME
+- [x] Professional bio
+- [x] Skills and expertise listing
+- [x] Experience timeline
+- [x] Education background
+
+### CONTACT
+- [x] Contact form
+- [x] Social media links
+- [x] Email link
+
+### WEBGL INTEGRATION
+- [x] Research iframe security requirements
+- [x] Create responsive containers for embeds
+- [x] Test itch.io embedding
+- [  ] Test other platforms' embedding
+
+## TECHNICAL REQUIREMENTS
+- [x] Implement responsive design
+- [  ] Optimize for performance
+- [  ] Cross-browser testing
+- [  ] Accessibility compliance
+
+## DEPLOYMENT
+- [  ] Choose hosting platform
+- [  ] Set up deployment workflow
+- [  ] Configure custom domain (if applicable)
+- [  ] Set up SSL certificate
+
+## POST-LAUNCH
+- [  ] Test all links and functionality
+- [  ] Optimize SEO
+- [  ] Add analytics
+- [  ] Create update/maintenance plan
