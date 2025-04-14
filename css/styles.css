@@ -376,6 +376,31 @@ nav ul li a.active::after {
   color: #007bff;
 }
 
+/* Form Loader Animation */
+.form-loader {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.9);
+    display: grid;
+    place-items: center;
+    z-index: 100;
+}
+
+.form-loader::after {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Form Success Message */
 .form-success {
     display: none;
