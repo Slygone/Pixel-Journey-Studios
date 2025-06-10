@@ -41,24 +41,12 @@
             </div>
         </section>
 
-        <!-- Project Filters -->
-        <section class="project-filters">
-            <div class="container">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="unity">Unity</button>
-                    <button class="filter-btn" data-filter="unreal">Unreal Engine</button>
-                    <button class="filter-btn" data-filter="webgl">WebGL</button>
-                </div>
-            </div>
-        </section>
-
         <!-- Projects Gallery -->
         <section class="projects-gallery">
             <div class="container">
                 <div class="project-grid">
                     <!-- Project 1 -->
-                    <div class="project-card" data-category="unity webgl">
+                    <div class="project-card">
                         <div class="project-image">
                             <img src="img/project1.jpg" alt="Project 1">
                         </div>
@@ -108,38 +96,5 @@
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
-    
-    <!-- Project Filtering JS -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Project filtering functionality
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const projectCards = document.querySelectorAll('.project-card');
-            
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // Update active button
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // Get filter value
-                    const filterValue = this.getAttribute('data-filter');
-                    
-                    // Filter projects
-                    projectCards.forEach(card => {
-                        if (filterValue === 'all') {
-                            card.style.display = 'block';
-                        } else {
-                            if (card.getAttribute('data-category').includes(filterValue)) {
-                                card.style.display = 'block';
-                            } else {
-                                card.style.display = 'none';
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 </html>
